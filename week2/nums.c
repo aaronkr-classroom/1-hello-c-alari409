@@ -1,7 +1,10 @@
 // nums.c
 
+
 # include <stdio.h>
-#include <limits.h>
+#include <limits.h> // 최대값/ 최소값 볼 때
+
+
 int main(void) {
 	//char 1 byte (character)
 	char ch= 'A';
@@ -11,30 +14,29 @@ int main(void) {
 	printf("Value: %d\n", CHAR_MIN);
 
 	// signed short int 2byte(integer)
-
 	signed short int sshort= 1234;
 	printf("\nsigned short int: \n");
 	printf("Value: %c\n", sshort);
 	printf("Max: %d\n", CHAR_MAX);
-	printf("Min: %d\n", CHAR_MIN);
+	printf("Min: %d\n", CHAR_MIN);	//limit.h 의 상수
 
 
 	// unsigned short int 2byte(integer)
 	unsigned short int ushort = 1234U;
 	printf("\nunsigned shrort int: \n");
 	printf("Value: %d\n", ushort);
-	printf("Max: %d\n", SHRT_MAX); //limit.h 의 상수
+	printf("Max: %d\n", USHRT_MAX); //limit.h 의 상수
 
 	// signed int 4byte(integer)
 	signed int sint = 12345;
 	printf("\nsigned int: \n");
 	printf("Value: %d\n", sint);
-	printf("Max: %d\n", INT_MAX);
+	printf("Max: %d\n", INT_MAX);	//limit.h 의 상수
 	printf("Min: %d\n", INT_MIN);
 
 	// unsigned int 4byte(integer)
-	unsigned short int uint = 12345U;
-	printf("\nunsigned shrort int: \n");
+	unsigned int uint = 12345U;
+	printf("\nunsigned int: \n");
 	printf("Value: %d\n", uint);
 	printf("Max: %d\n", UINT_MAX); //limit.h 의 상수
 	
@@ -47,7 +49,7 @@ int main(void) {
 	signed long int slong = 123456789L;
 	printf("\nsigned long int: \n");
 	printf("Value: %d\n", slong);
-	printf("Max: %d\n", LONG_MAX);
+	printf("Max: %d\n", LONG_MAX);	//limit.h 의 상수
 	printf("Min: %d\n", LONG_MIN);
 
 
